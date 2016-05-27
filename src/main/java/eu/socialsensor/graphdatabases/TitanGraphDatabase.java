@@ -147,7 +147,7 @@ public class TitanGraphDatabase extends GraphDatabaseBase<Iterator<Vertex>, Iter
 
         if (GraphDatabaseType.TITAN_CASSANDRA == type)
         {
-            storage.addProperty("hostname", "localhost");
+            storage.addProperty("hostname", "130.211.80.150");            
             storage.addProperty("transactions", Boolean.toString(batchLoading));
         }
         else if (GraphDatabaseType.TITAN_CASSANDRA_EMBEDDED == type)
